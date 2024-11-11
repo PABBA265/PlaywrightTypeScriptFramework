@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",                // Use the latest ECMAScript version
+    "module": "commonjs",              // CommonJS module format for Node.js
+    "strict": true,                    // Enable all strict type-checking options
+    "esModuleInterop": true,           // Enable compatibility for importing CommonJS modules
+    "skipLibCheck": true,              // Skip type checking of declaration files
+    "moduleResolution": "node",        // Module resolution strategy (for Node.js)
+    "outDir": "dist",                  // Output directory for compiled JS files
+    "sourceMap": true,                 // Generate source maps for debugging
+    "resolveJsonModule": true          // Allow importing JSON files
+  },
+  "include": [
+    "tests/**/*.ts",                   // Include all test files
+    "pages/**/*.ts",                   // Include all page object files
+    "playwright.config.ts"             // Include the config file
+  ],
+  "exclude": ["node_modules"]          // Exclude the node_modules directory
+}
